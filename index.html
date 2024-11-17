@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+  
+<head>
+  <meta charset="utf-8">
+  <title>The element selector</title>
+  <body>
+    <style>
+body {
+    background-color: rgb(209, 129, 224);
+  }
+  
+  h1 {
+    color: rgb(241, 140, 196);
+  }
+  
+  #Productos {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .menu ul {
+    display: flex;
+    padding: 0;
+    margin-left: 80px;
+    margin:0;
+    list-style: none;
+    
+  }
+  
+  .menu a {
+    display: block;
+    padding: 1em;
+    background-color: grey;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  .menu a:hover {
+    background-color: rgb(134, 250, 115);
+
+  }
+  
+  .menu ul li ul {
+    display: none;
+    
+  }
+  
+  .menu ul li a:hover + ul, .menu ul li ul:hover {
+    display: block;
+  }
+  .menu{
+    border: 5px white dashed;
+    width: 27.5%;
+    margin-left: 40px;
+  }
+
+#titulo1
+ { background: grey;
+    width: 28%;
+    margin-left: 500px;
+    
+  } 
+
+ #tema2{
+  background-color: white;
+   width: 25%;
+}
+#tema3{
+  background: white;
+}
+
+#contactos{
+  background: white;
+  width: 12%;
+}
+
+.margen{
+  background: white;
+  margin: 15px 20px 25px 400px;
+  padding: 5px px 30px 30px; 
+  width: 28%;
+  height:40px;
+}
+ #container {
+ width: px;
+ margin-left: 80px;
+}
+#imagen1 {
+  margin-left: 10px;
+}
+
+#imagen1 {
+    position: relative;
+top: 4px; left: 8px; }
+      
+
+</style>
+</head>
+<body>
+   <div id="container">
+  <nav class="menu">
+    <ul>
+      <li><a href="#">INICIO</a></li>
+      <li><a href="#">CONTENIDOS</a>
+        <ul>
+             <li><a href="#titulo1">LALA ACCESORIOS</a></li>
+          <li><a href="#tema2">¿DE QUE TRATA?</a></li>
+     
+        </ul>
+      </li>
+      <li><a href="#contactos">CONTACTOS</a></li>
+    </ul>
+  </nav>
+ 
+ 
+       
+  <h1 id="titulo1" class="margen">LALA ACCESORIOS</h1>
+     
+  <h3 id="seccion1">¿De que trata este sitio web?</h3>
+
+     <p>
+  
+  <article >
+ Este sitio web tiene como función ayudar a Angela a crecer con su nueva empresa “LALA ACCESORIOS”, en la cual vende ropa y accesorios para dama. En esta página podrán encontrar todo lo relacionado con su marca, como su catálogo, precios, contactos, dirección del local etc. Como desarrollador web busco impulsar este emprendimiento de manera digital para que Angela pueda llegar a muchos más lugares con sus productos y vender mucho más.
+  </article>
+     <P>
+  <br>
+  
+
+     
+     <p> Lista de productos </p>
+     
+          <img id="imagen1"src="data:image/jpeg;base64,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">
+     
+      <img id="imagen1"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtZXE26JlVYsLjYHNcQVdyz_kbCqjPICWoJQ&s">
+        <img id="imagen1"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1RanQRLjjTqt5zzyS6kYsbs-G53aeyxdRVg&s">
+     
+     
+  
+  <ul>
+
+<li><h3 id="tema2"> 1. Pantalon, Tallas: 6-8-10-12-14-16 </h3>
+
+
+<li><h3 id="tema2"> 2. Vestido elegante, colores: negro, blanco, beige, cafe - todas las tallas</h3>
+
+
+<li><h3 id="tema2">3. blusa cuello tortuga, talla: S-M-XL</h3>
+
+
+<li><h3 id="tema2">4. Set de aretes con cadena de oro</h3>
+
+
+<li><h3 id="tema2">5. Sudaderas deportivas, colores: Rosado,negro,blanco,azul oscuro-Talla unica </h3>
+
+ 
+<li><h3 id="tema2">6. Tennis para dama, talla disponible desde la 34 hasta la 41</h3>
+
+ <div class="container content">
+        <button type="button" class="btn btn-interactive" data-toggle="modal" data-target="#interactiveModal">
+            Tip para combinar mejor la ropa
+        </button>
+
+        <div class="modal fade" id="interactiveModal" tabindex="-1" role="dialog" aria-labelledby="interactiveModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="interactiveModalLabel">Crea looks monocromaticos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                     El look monocromático es una de las combinaciones más fáciles de conseguir. Consiste en  ir vestida del mismo color de pies a cabeza.
+
+Lo ideal es variar los tonos para crear volumen y movimiento. Me explico, si quieres ir vestida de azul con un look monocromático, debes escoger diferentes tonalidades de este color.
+
+Pon los tonos más claro allí donde quieras añadir volumen y los oscuros donde debas suavizarlo. Por ejemplo si tu figura es triangulo, el tono claro ira en la zona superior de tu cuerpo mientras que el oscuro irá en la parte de abajo. Con esto consigues armonizar tu figura.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Lala Accesorios</p>
+    </footer>
+
+
+<table border id="tema3"> 
+	<thead>
+		<tr>
+			<th>PRODUCTO</th>
+			<th>PRECIO</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Pantalon para dama</td>
+				<td> 40.000</td>
+				</tr>
+				<tr>
+				<td>Vestido elegante</td>
+				<td>85.000</td>
+				</tr>
+				<tr>
+				<td>Blusa cuello tortuga</td>
+				<td>30.000</td>
+				</tr>
+      <tr>
+				<td>Set de aretes con collar de oro</td>
+				<td>130.000</td>
+				</tr>
+       <tr>
+				<td>Sudadera deportiva</td>
+				<td>50.000</td>
+				</tr>
+       <tr>
+				<td>Tennis para dama</td>
+				<td>70.000</td>
+				</tr>
+			</tbody>
+	</table>
+  </p>
+
+  <a target="_blank"
+     href=https://www.buscandotuestilo.com/asesoria-de-imagen/trucos-para-combinar-ropa/">Mira algunos consejos para vestir mejor que tenemos para ti!!!</a>
+                                                                      
+       <aside>
+                <h4 id="contactos"> Autor de la pagina web </h4>
+                <p> Jheissler Morales Rodríguez 10</p>
+                                  
+<a href="#seccion1">Ir a la sección 1</a>
+            </aside>
+
+</div>
+<footer>
+
+</footer>
+
+</body>
+</html>
